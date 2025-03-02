@@ -1,7 +1,6 @@
 "use client";
 import { Menu } from "lucide-react";
-//import Dashboard from "./Dashboard";
-import Dashboard from "./Dashboard2";
+import Dashboard from "./Dashboard";
 import { AddUser, UserList } from "./Users";
 import { General, Security, Notifications } from "./Settings";
 

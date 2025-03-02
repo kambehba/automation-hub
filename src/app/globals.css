@@ -22,3 +22,21 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2,
+p {
+  font-weight: 700 !important;
+}
+
+.text-3xl {
+  color: #000 !important;
+}
+
+.text-lg {
+  color: #000 !important;
+}
