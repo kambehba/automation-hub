@@ -14,8 +14,17 @@ function MainContent({
     switch (activeContent) {
       case "dashboard":
         return <Dashboard />;
-      case "users":
-        return activeSubContent === "add user" ? <AddUser /> : <UserList />;
+      case "projects":
+        switch (activeSubContent) {
+          case "paint machine":
+            return <div>Paint Machine</div>;
+          case "":
+            return <Security />;
+          case "notifications":
+            return <Notifications />;
+          default:
+            return <General />;
+        }
       case "settings":
         switch (activeSubContent) {
           case "general":
