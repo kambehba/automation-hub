@@ -2,6 +2,7 @@
 import { Menu } from "lucide-react";
 import Dashboard from "./Dashboard";
 import Project_2 from "./Project_2";
+import ContactMe from "./ContactMe";
 import { AddUser, UserList } from "./Users";
 import { General, Security, Notifications } from "./Settings";
 
@@ -21,22 +22,14 @@ function MainContent({
             return <Project_2 />;
           case "":
             return <Security />;
-          case "notifications":
+          case "Intruder":
             return <Notifications />;
           default:
             return <General />;
         }
-      case "settings":
-        switch (activeSubContent) {
-          case "general":
-            return <General />;
-          case "security":
-            return <Security />;
-          case "notifications":
-            return <Notifications />;
-          default:
-            return <General />;
-        }
+      case "contact me":
+        return <ContactMe />;
+
       default:
         return <Dashboard />;
     }

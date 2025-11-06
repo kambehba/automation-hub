@@ -120,7 +120,7 @@ function Sidebar({
           <NavItem
             icon={Pickaxe}
             title="Projects"
-            children={["Paint Machine", "Introder"]}
+            children={["Paint Machine", "Intruder"]}
             activeContent={activeContent}
             activeSubContent={activeSubContent}
             setActiveContent={setActiveContent}
@@ -128,10 +128,9 @@ function Sidebar({
           />
           <NavItem
             icon={Contact}
-            title="About"
-            children={["Profile", "Contact in Iran", "US Contact"]}
+            title="Contact Me"
+            onClick={() => setActiveContent("contact me")}
             activeContent={activeContent}
-            activeSubContent={activeSubContent}
             setActiveContent={setActiveContent}
             setActiveSubContent={setActiveSubContent}
           />
