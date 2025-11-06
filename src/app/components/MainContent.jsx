@@ -1,7 +1,7 @@
 "use client";
 import { Menu } from "lucide-react";
 import Dashboard from "./Dashboard";
-import Project_1 from "./Project_1";
+import Project_2 from "./Project_2";
 import { AddUser, UserList } from "./Users";
 import { General, Security, Notifications } from "./Settings";
 
@@ -18,7 +18,7 @@ function MainContent({
       case "projects":
         switch (activeSubContent) {
           case "paint machine":
-            return <Project_1 />;
+            return <Project_2 />;
           case "":
             return <Security />;
           case "notifications":
