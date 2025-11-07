@@ -1,7 +1,9 @@
 "use client";
 import { Menu } from "lucide-react";
 import Dashboard from "./Dashboard";
-import Project_2 from "./Project_2";
+import PaintMachine from "./PaintMachine";
+import Extruder from "./Extruder";
+import Mixer from "./Mixer";
 import ContactMe from "./ContactMe";
 import { AddUser, UserList } from "./Users";
 import { General, Security, Notifications } from "./Settings";
@@ -13,17 +15,18 @@ function MainContent({
   activeSubContent,
 }) {
   const renderContent = () => {
+    console.log(activeSubContent);
     switch (activeContent) {
       case "dashboard":
         return <Dashboard />;
       case "projects":
         switch (activeSubContent) {
           case "paint machine":
-            return <Project_2 />;
-          case "":
-            return <Security />;
-          case "Intruder":
-            return <Notifications />;
+            return <PaintMachine />;
+          case "extruder":
+            return <Extruder />;
+          case "raw material mixer":
+            return <Mixer />;
           default:
             return <General />;
         }

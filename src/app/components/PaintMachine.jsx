@@ -9,7 +9,7 @@ export default function ImageTextLayout() {
     {
       id: 1,
       image: i1,
-      text: "Innovative technology solutions that transform the way businesses operate. We specialize in creating cutting-edge software that drives efficiency and growth. Our team of experts delivers results that exceed expectations. Experience the future of digital transformation with our comprehensive services.",
+      text: "Innovative technology solutions that transform the way businesses operate. Water Pumps and Lighting Automation for Paint Machine",
     },
     {
       id: 2,

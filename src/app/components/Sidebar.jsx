@@ -120,7 +120,7 @@ function Sidebar({
           <NavItem
             icon={Pickaxe}
             title="Projects"
-            children={["Paint Machine", "Intruder"]}
+            children={["Paint Machine", "Extruder", "Raw Material Mixer"]}
             activeContent={activeContent}
             activeSubContent={activeSubContent}
             setActiveContent={setActiveContent}
