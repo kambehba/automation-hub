@@ -1,18 +1,13 @@
 import Image from "next/image";
-import i2 from "../assets/images/i11.jpg";
+import i2 from "../assets/images/i31.jpg";
 import i3 from "../assets/images/i12.jpg";
 
 export default function ImageTextLayout() {
   const sections = [
     {
-      id: 2,
-      image: i3,
-      text: "Ensuring consistent quality and efficiency in raw material blending for optimal production outcomes.",
-    },
-    {
       id: 3,
       image: i2,
-      text: "PLC Controlled automated Mixer.",
+      text: "PLC Controlled automated Mixer. Ensuring consistent quality and efficiency in raw material blending for optimal production outcomes.",
     },
   ];
 

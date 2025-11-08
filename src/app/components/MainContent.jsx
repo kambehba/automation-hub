@@ -5,6 +5,7 @@ import PaintMachine from "./PaintMachine";
 import Extruder from "./Extruder";
 import Mixer from "./Mixer";
 import ContactMe from "./ContactMe";
+import Album from "./Album";
 import { AddUser, UserList } from "./Users";
 import { General, Security, Notifications } from "./Settings";
 
@@ -30,6 +31,8 @@ function MainContent({
             return <Extruder />;
           case "raw material mixer":
             return <Mixer />;
+          case "album":
+            return <Album />;
         }
       case "contact me":
         return <ContactMe />;
