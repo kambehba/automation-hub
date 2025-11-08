@@ -11,7 +11,7 @@ import {
   Menu,
 } from "lucide-react";
 import Image from "next/image";
-import logo from "../assets/images/i1.jpg";
+import logo from "../assets/images/arash2.jpg";
 
 const NavItem = ({
   icon: Icon,
