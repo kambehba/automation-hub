@@ -5,6 +5,9 @@ import i1 from "../assets/images/i30.jpg";
 import i2 from "../assets/images/i28.jpg";
 import i3 from "../assets/images/i25.jpg";
 import i4 from "../assets/images/i27.jpg";
+import i5 from "../assets/images/i34.jpg";
+import i6 from "../assets/images/i35.jpg";
+import i7 from "../assets/images/i36.jpg";
 export default function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -23,7 +26,19 @@ export default function ImageSlider() {
     },
     {
       image: i4,
-      text: "Electrical Panel Wiring for PLC Systems",
+      text: "Extruder Machine Automation Setup",
+    },
+    {
+      image: i5,
+      text: "Extruder Machine Automation Setup",
+    },
+    {
+      image: i6,
+      text: "Extruder Machine Automation Setup",
+    },
+    {
+      image: i7,
+      text: "Extruder Machine Automation Setup",
     },
   ];
 
@@ -35,13 +50,13 @@ export default function ImageSlider() {
     setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  //   useEffect(() => {
+  //     const interval = setInterval(nextSlide, 10000);
+  //     return () => clearInterval(interval);
+  //   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex flex-col items-center justify-center p-4">
+    <div className="max-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex flex-col items-center justify-center p-4">
       {/* Fixed Header */}
       <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 md:mb-12 text-center tracking-tight">
         PLC Automation Gallery

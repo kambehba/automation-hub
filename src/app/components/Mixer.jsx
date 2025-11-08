@@ -1,6 +1,7 @@
 import Image from "next/image";
 import i2 from "../assets/images/i31.jpg";
-import i3 from "../assets/images/i12.jpg";
+import i3 from "../assets/images/i32.jpg";
+import i4 from "../assets/images/i33.jpg";
 
 export default function ImageTextLayout() {
   const sections = [
@@ -8,6 +9,16 @@ export default function ImageTextLayout() {
       id: 3,
       image: i2,
       text: "PLC Controlled automated Mixer. Ensuring consistent quality and efficiency in raw material blending for optimal production outcomes.",
+    },
+    {
+      id: 4,
+      image: i3,
+      text: "Sensore wiring for Mixer.",
+    },
+    {
+      id: 5,
+      image: i4,
+      text: "Electric box before Installation.",
     },
   ];
 
