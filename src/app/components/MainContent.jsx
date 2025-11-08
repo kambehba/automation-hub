@@ -15,7 +15,10 @@ function MainContent({
   activeSubContent,
 }) {
   const renderContent = () => {
-    console.log(activeSubContent);
+    if (activeContent === "projects" && !activeSubContent) {
+      return <Dashboard />;
+    }
+    console.log(activeContent);
     switch (activeContent) {
       case "dashboard":
         return <Dashboard />;
@@ -27,14 +30,12 @@ function MainContent({
             return <Extruder />;
           case "raw material mixer":
             return <Mixer />;
-          default:
-            return <General />;
         }
       case "contact me":
         return <ContactMe />;
 
-      default:
-        return <Dashboard />;
+      // default:
+      //   return <Dashboard />;
     }
   };
 
