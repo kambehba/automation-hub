@@ -8,7 +8,6 @@ import i4 from "../assets/images/i27.jpg";
 import i5 from "../assets/images/i34.jpg";
 import i6 from "../assets/images/i35.jpg";
 import i7 from "../assets/images/i36.jpg";
-
 export default function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -57,7 +56,7 @@ export default function ImageSlider() {
   //   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex flex-col items-center justify-center p-4">
+    <div className="max-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex flex-col items-center justify-center p-4">
       {/* Fixed Header */}
       <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 md:mb-12 text-center tracking-tight">
         PLC Automation Gallery
@@ -66,13 +65,12 @@ export default function ImageSlider() {
       {/* Image Slider Container */}
       <div className="relative w-full max-w-6xl">
         {/* Main Image */}
-        <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-slate-800">
+        <div className="relative aspect-video overflow-hidden rounded-2xl shadow-2xl">
           <Image
             src={slides[currentIndex].image}
             alt={slides[currentIndex].text}
-            className="w-full h-auto object-contain transition-opacity duration-500"
+            className="w-full h-full object-cover transition-opacity duration-500"
             key={currentIndex}
-            priority
           />
 
           {/* Navigation Buttons */}

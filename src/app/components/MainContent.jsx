@@ -5,7 +5,7 @@ import PaintMachine from "./PaintMachine";
 import Extruder from "./Extruder";
 import Mixer from "./Mixer";
 import ContactMe from "./ContactMe";
-import Album from "./Album";
+import Album from "./Album_o";
 import { AddUser, UserList } from "./Users";
 import { General, Security, Notifications } from "./Settings";
 
