@@ -1,7 +1,8 @@
 import Image from "next/image";
-import i2 from "../assets/images/i3.jpg";
+import i2 from "../assets/images/i26.jpg";
 import i3 from "../assets/images/i4.jpg";
-import i4 from "../assets/images/i5.jpg";
+import i4 from "../assets/images/i37.jpg";
+import i5 from "../assets/images/i38.jpg";
 
 export default function ImageTextLayout() {
   const sections = [
@@ -14,6 +15,16 @@ export default function ImageTextLayout() {
       id: 3,
       image: i3,
       text: "Data-driven insights power smarter business decisions. We analyze complex datasets to uncover valuable patterns and opportunities. Our analytics platform provides real-time visibility into key performance metrics. Transform raw data into actionable intelligence that propels your business forward.",
+    },
+    {
+      id: 4,
+      image: i4,
+      text: "Controlling Temperature of Extruder Machine using PLC and SCADA System",
+    },
+    {
+      id: 5,
+      image: i5,
+      text: "Automation of Extruder Machine for Plastic Industry using PLC and SCADA System.",
     },
   ];
 

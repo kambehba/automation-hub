@@ -22,6 +22,7 @@ const NavItem = ({
   activeSubContent,
   setActiveContent,
   setActiveSubContent,
+  toggleSidebar,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,7 +30,7 @@ const NavItem = ({
     if (children) {
       setIsOpen(!isOpen);
     } else {
-      onClick();
+      onClick(toggleSidebar);
     }
     setActiveContent(title.toLowerCase());
     setActiveSubContent(null);
@@ -120,12 +121,7 @@ function Sidebar({
           <NavItem
             icon={Pickaxe}
             title="Projects"
-            children={[
-              "Paint Machine",
-              "Extruder",
-              "Raw Material Mixer",
-              "Album",
-            ]}
+            children={["Paint Machine", "Extruder", "Mixer", "Album"]}
             activeContent={activeContent}
             activeSubContent={activeSubContent}
             setActiveContent={setActiveContent}
