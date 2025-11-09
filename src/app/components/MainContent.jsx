@@ -29,7 +29,7 @@ function MainContent({
             return <PaintMachine />;
           case "extruder":
             return <Extruder />;
-          case "raw material mixer":
+          case "mixer":
             return <Mixer />;
           case "album":
             return <Album />;
