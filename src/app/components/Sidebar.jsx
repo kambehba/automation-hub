@@ -9,6 +9,7 @@ import {
   ChevronUp,
   Pickaxe,
   Menu,
+  FileUser,
 } from "lucide-react";
 import Image from "next/image";
 import logo from "../assets/images/arash2.jpg";
@@ -75,8 +76,6 @@ const NavItem = ({
               }`}
               onClick={() => {
                 handleSubItemClick(child);
-                // setActiveContent(title.toLowerCase());
-                // setActiveSubContent(child.toLowerCase());
               }}
             >
               {child}
@@ -145,6 +144,15 @@ function Sidebar({
             icon={Contact}
             title="Contact Me"
             onClick={() => setActiveContent("contact me")}
+            activeContent={activeContent}
+            setActiveContent={setActiveContent}
+            setActiveSubContent={setActiveSubContent}
+            toggleSidebar={toggleSidebar}
+          />
+          <NavItem
+            icon={FileUser}
+            title="Resume"
+            onClick={() => setActiveContent("resume")}
             activeContent={activeContent}
             setActiveContent={setActiveContent}
             setActiveSubContent={setActiveSubContent}
