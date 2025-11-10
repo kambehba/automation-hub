@@ -161,6 +161,15 @@ function Sidebar({
             setActiveSubContent={setActiveSubContent}
             toggleSidebar={toggleSidebar}
           />
+          <NavItem
+            icon={FileUser}
+            title="Video"
+            onClick={() => setActiveContent("video")}
+            activeContent={activeContent}
+            setActiveContent={setActiveContent}
+            setActiveSubContent={setActiveSubContent}
+            toggleSidebar={toggleSidebar}
+          />
         </nav>
       </aside>
     </>
