@@ -49,12 +49,13 @@ function MainContent({
   };
 
   return (
-    <main
-      className={`h-full overflow-y-auto p-4 transition-all duration-300 ${
-        isSidebarOpen ? "lg:ml-64" : ""
-      }`}
-    >
-      <div className="max-w-7xl mx-auto">
+    // <main
+    //   className={`h-full overflow-y-auto p-4 transition-all duration-300 ${
+    //     isSidebarOpen ? "lg:ml-64" : ""
+    //   }`}
+    // >
+    <main className="h-full overflow-y-auto transition-all duration-300 lg:ml-64 ">
+      <div className="max-w-7xl mx-auto rm-200">
         <div className="mb-4">
           <button
             className="p-2 bg-gray-800 text-white rounded lg:hidden"

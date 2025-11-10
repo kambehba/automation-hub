@@ -45,7 +45,6 @@ const NavItem = ({
     setActiveContent(title.toLowerCase());
     setActiveSubContent(child.toLowerCase());
     // Close sidebar on mobile when sub-item is clicked
-    console.log("Clicked on sub-item", child);
     if (window.innerWidth < 1024 && child) {
       toggleSidebar();
     }
