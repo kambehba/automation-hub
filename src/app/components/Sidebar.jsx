@@ -28,8 +28,7 @@ const NavItem = ({
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    console.log(title);
-    console.log(children);
+    toggleSidebar();
     if (children) {
       setIsOpen(!isOpen);
     } else {
