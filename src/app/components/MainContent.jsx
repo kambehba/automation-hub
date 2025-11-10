@@ -19,7 +19,7 @@ function MainContent({
     if (activeContent === "projects" && !activeSubContent) {
       return <Dashboard />;
     }
-    console.log(activeContent);
+    console.log(activeSubContent);
     switch (activeContent) {
       case "dashboard":
         return <Dashboard />;

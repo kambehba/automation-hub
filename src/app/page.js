@@ -24,6 +24,7 @@ export default function Home() {
         setActiveSubContent={setActiveSubContent}
         activeContent={activeContent}
         activeSubContent={activeSubContent}
+        dothis={h}
       />
       <div className="flex-1 overflow-hidden">
         <MainContent

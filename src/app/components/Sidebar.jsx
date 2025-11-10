@@ -27,13 +27,24 @@ const NavItem = ({
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
+    console.log(title);
+    console.log(children);
     if (children) {
       setIsOpen(!isOpen);
     } else {
-      onClick(toggleSidebar);
+      onClick();
     }
     setActiveContent(title.toLowerCase());
     setActiveSubContent(null);
+  };
+
+  const handleSubItemClick = (child) => {
+    setActiveContent(title.toLowerCase());
+    setActiveSubContent(child.toLowerCase());
+    // Close sidebar on mobile when sub-item is clicked
+    if (window.innerWidth < 1024) {
+      toggleSidebar();
+    }
   };
 
   return (
@@ -63,8 +74,9 @@ const NavItem = ({
                   : ""
               }`}
               onClick={() => {
-                setActiveContent(title.toLowerCase());
-                setActiveSubContent(child.toLowerCase());
+                handleSubItemClick(child);
+                // setActiveContent(title.toLowerCase());
+                // setActiveSubContent(child.toLowerCase());
               }}
             >
               {child}
@@ -117,6 +129,7 @@ function Sidebar({
             activeSubContent={activeSubContent}
             setActiveContent={setActiveContent}
             setActiveSubContent={setActiveSubContent}
+            toggleSidebar={toggleSidebar}
           />
           <NavItem
             icon={Pickaxe}
@@ -126,6 +139,7 @@ function Sidebar({
             activeSubContent={activeSubContent}
             setActiveContent={setActiveContent}
             setActiveSubContent={setActiveSubContent}
+            toggleSidebar={toggleSidebar}
           />
           <NavItem
             icon={Contact}
@@ -134,6 +148,7 @@ function Sidebar({
             activeContent={activeContent}
             setActiveContent={setActiveContent}
             setActiveSubContent={setActiveSubContent}
+            toggleSidebar={toggleSidebar}
           />
         </nav>
       </aside>
