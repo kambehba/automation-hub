@@ -28,7 +28,10 @@ const NavItem = ({
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    toggleSidebar();
+    if (title !== "Projects") {
+      toggleSidebar();
+    }
+
     if (children) {
       setIsOpen(!isOpen);
     } else {
@@ -42,7 +45,8 @@ const NavItem = ({
     setActiveContent(title.toLowerCase());
     setActiveSubContent(child.toLowerCase());
     // Close sidebar on mobile when sub-item is clicked
-    if (window.innerWidth < 1024) {
+    console.log("Clicked on sub-item", child);
+    if (window.innerWidth < 1024 && child) {
       toggleSidebar();
     }
   };
