@@ -120,8 +120,19 @@ export default function Video() {
             Your browser does not support the video tag.
           </video> */}
           <iframe
-            className="w-full aspect-video"
+            className="w-full aspect-video mb-4"
             src="https://www.youtube.com/embed/906O6wpKmWM"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          <div className="p-4 text-white">
+            <h2 className="text-2xl font-bold mb-2">Full PLC Automation</h2>
+          </div>
+          <iframe
+            className="w-full aspect-video"
+            src="https://www.youtube.com/embed/UxbgVkCNgmw"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
