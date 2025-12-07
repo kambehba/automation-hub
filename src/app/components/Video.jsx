@@ -128,7 +128,7 @@ export default function Video() {
             allowFullScreen
           ></iframe>
           <div className="p-4 text-white">
-            <h2 className="text-2xl font-bold mb-2">Full PLC Automation</h2>
+            <h2 className="text-2xl font-bold mb-2">**Full PLC Automation**</h2>
           </div>
           <iframe
             className="w-full aspect-video"
