@@ -11,7 +11,7 @@ import {
 export default function Resume() {
   const resumeData = {
     contact: {
-      email: "arashnoorali@myyahoo.com",
+      email: "noorali_arash@yahoo.com",
       phone: "+374 93 751081",
     },
     skills:

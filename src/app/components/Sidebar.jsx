@@ -162,6 +162,15 @@ function Sidebar({
           />
           <NavItem
             icon={FileUser}
+            title="Certification"
+            onClick={() => setActiveContent("certification")}
+            activeContent={activeContent}
+            setActiveContent={setActiveContent}
+            setActiveSubContent={setActiveSubContent}
+            toggleSidebar={toggleSidebar}
+          />
+          <NavItem
+            icon={FileUser}
             title="Video"
             onClick={() => setActiveContent("video")}
             activeContent={activeContent}

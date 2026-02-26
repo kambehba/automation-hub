@@ -6,7 +6,7 @@ export default function ContactPage() {
       icon: <Mail className="w-8 h-8" />,
       title: "Email",
       description: "Send me an email anytime",
-      value: "noorali_arash@yahoo.com , arashNoorali@myyahoo.com",
+      value: "noorali_arash@yahoo.com",
       link: "mailto:your.email@example.com",
       color: "from-blue-500 to-blue-600",
     },

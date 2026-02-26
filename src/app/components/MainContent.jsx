@@ -7,6 +7,7 @@ import Mixer from "./Mixer";
 import ContactMe from "./ContactMe";
 import Album from "./Album_o";
 import Resume from "./Resume";
+import Certification from "./Certification";
 import Video from "./Video";
 import { AddUser, UserList } from "./Users";
 import { General, Security, Notifications } from "./Settings";
@@ -40,6 +41,8 @@ function MainContent({
         return <ContactMe />;
       case "resume":
         return <Resume />;
+      case "certification":
+        return <Certification />;
       case "video":
         return <Video />;
 
